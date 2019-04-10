@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../jquery/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <style>
+        .box1{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        .box2{
+
+        }
+        .box3{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<!--    图片的样式-->
+    <h1 class="page-header">我是前段框架</h1>
+    <img src="../images/img1.png" alt="" class="img-rounded">
+    <img src="../images/img1.png" alt="" class="img-thumbnail">
+    <img src="../images/img1.png" alt="" class="img-circle">
+
+
+<!--    文本颜色和背景颜色-->
+    <p class="text-info">linux is very much1</p>
+    <p class="text-danger">linux is very much1</p>
+    <p class="text-primary">linux is very much1</p>
+    <p class="text-muted">linux is very much1</p>
+    <p class="bg-danger">linux is very much1</p>
+    <p class="bg-primary">linux is very much1</p>
+    <p class="bg-info">linux is very much1 <span class="close">&times;</span></p>
+    <p class="bg-primary">linux is very much1 <button class="btn btn-info">更多<span class="caret"></span></button></p>
+
+
+    <div class="box1">
+
+    </div>
+
+    <div class="box2 clearfix">
+
+    </div>
+    <div class="box3">
+
+    </div>
+
+
+</div>
+
+<script>
+    $('.close').click(function () {
+        $(this).parent().hide();
+    });
+</script>
+
+</body>
+</html>
