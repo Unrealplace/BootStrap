@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../jquery/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+</head>
+<body>
+
+<div class="container">
+    <button class="btn btn-info text-danger btn-block"><span class="glyphicon glyphicon-apple" style="font-size: 50px"></span> 我是按钮</button>
+
+<!--    下拉菜单-->
+    <div class="dropdown pull-right">
+        <button class="btn btn-primary" data-toggle="dropdown">更多课程 <span class="caret"></span></button>
+
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li class="dropdown-header">我是标题</li>
+            <li><a href="">百度</a></li>
+            <li><a href="">阿里</a></li>
+            <li><a href="">公共</a></li>
+            <li><a href="">直达车</a></li>
+        </ul>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+<!--    上拉菜单-->
+    <div class="dropup center-block">
+        <button class="btn btn-info" data-toggle="dropdown">上拉菜单<span class="glyphicon glyphicon-arrow-up"></span></button>
+
+        <ul class="dropdown-menu">
+            <li><a href="">111</a></li>
+            <li><a href="">222</a></li>
+            <li><a href="">333</a></li>
+            <li class="divider" role="separator"></li>
+            <li class="disabled">fafaa</li>
+        </ul>
+    </div>
+
+<!--    按钮组-->
+    <div class="btn-group-vertical">
+        <button class="btn btn-danger">aaa</button>
+        <button class="btn btn-info">ggg</button>
+        <button class="btn btn-primary">ddd</button>
+    </div>
+
+    <div class="btn-group btn-group-justified" role="group">
+        <div class="btn-group"><button class="btn btn-danger">aaa</button></div>
+        <div class="btn-group">        <button class="btn btn-info">ggg</button>
+        </div>
+        <div class="btn-group">        <button class="btn btn-primary">ddd</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
