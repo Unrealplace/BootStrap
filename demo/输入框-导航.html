@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../jquery/jquery.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+
+<div class="container">
+    <form action="" class="form-horizontal">
+        <div class="input-group">
+            <div class="input-group-addon"><span class="glyphicon-star"></span></div>
+            <input type="text" class="form-control">
+            <div class="input-group-addon"><span class="glyphicon-apple"></span></div>
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-addon"><span>
+                <input type="checkbox" class="">
+            </span>
+            </div>
+            <input type="text" class="form-control">
+            <div class="input-group-addon"><span class="glyphicon-apple"></span></div>
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button class="btn btn-primary">我是按钮</button>
+            </div>
+            <input type="text" class="form-control">
+            <div class="input-group-btn">
+                <button class="btn btn-info" data-toggle="dropdown">菜单</button>
+                <ul class="dropdown-menu">
+                    <li>menu</li>
+                    <li>gogo</li>
+                    <li>hehe</li>
+                </ul>
+            </div>
+        </div>
+
+    </form>
+
+    <div class="clearfix"></div>
+
+<!--    导航-->
+<!--    标签式导航-->
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="">111</a></li>
+        <li><a href="">222</a></li>
+        <li><a href="">333</a></li>
+    </ul>
+
+<!--    胶囊式导航-->
+    <ul class="nav nav-pills">
+        <li><a href="">444</a></li>
+        <li><a href="">555</a></li>
+        <li><a href="">666</a></li>
+    </ul>
+
+    <ul class="nav nav-pills nav-stacked col-md-2">
+        <li><a href="">个人资料</a></li>
+        <li><a href="">钱包</a></li>
+        <li><a href="">帮助</a></li>
+    </ul>
+
+    <div class="col-md-10">
+        <div class="">
+            <p>
+                百度传课,中国教育领域新兴的在线教育平台。
+                您可在线传授技能,亦可在线学习你所需的一技之长。内容涉及英语学习、职场培训、生活技巧等技能。
+                百度传课,中国教育领域新兴的在线教育平台。您可在线传授技能,亦可在线学习你所需的一技之长。
+                内容涉及英语学习、职场培训、生活技巧等技能。
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $('li').mouseenter(function () {
+       $(this).addClass('active');
+       $('li').not($(this)).removeClass('active');
+    });
+</script>
+
+</body>
+</html>
