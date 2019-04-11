@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>资料修改</title>
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layoutFoot.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layoutHeader.css"/>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">		
+		<style type="text/css">
+			body{
+				background-color: #F5F5F5;
+			}
+			.myLogin{
+				background-color: #fff;
+				border: 1px solid #CCCCCC;
+				margin-top: 100px;
+				margin-bottom: 100px;
+				border-radius: 20px;
+			}
+			.btnRe,.btnSu{
+				width: 80px;
+				margin-left: 60px;
+			}
+			@media all and (min-width: 1200px){
+				.tl {
+    				width: 70%;
+    			}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航开始-->
+		<div class="container-fluid header">
+			<div class="row">
+				<nav class="navbar navbar-default navBg" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						            <span class="sr-only">切换导航</span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+       						</button>			
+							<a href="#" class="logoSet"><img style="margin-top: 10px;" src="../img/logo.png" /></a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav  navSet" style="margin-left: 100px;">
+								<li>
+									<a href="index.html">主页</a>
+								</li>
+								<li>
+									<a href="release.html">发布</a>
+								</li>
+								<li>
+									<a href="find.html">悬赏</a>
+								</li>
+								<li id="personalCenter_li">
+									<a href="#" id="personalCenter_a">个人中心 <b class="caret"></b></a>
+									<ul class="personalCenter t" id="personalCenter_ul">
+					                    <li><a href="personalInformation.html" id="person01">个人资料</a></li>
+					                    <li><a href="PersonalSkills.html">个人技能</a></li>
+					                    <li><a href="message.html">消息通知</a></li>
+					                    <li><a href="orderInformation.html">我的订单</a></li>
+					                </ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right navRset" style="margin-left: 100px;">
+								<li>
+									<a href="register.html"><span class="glyphicon glyphicon-user"></span> 注册</a>
+								</li>
+								<li>
+									<a href="login.html"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--导航结束-->
+
+			<!--表单开始-->
+		<div class="container myLogin tl">
+			<form class="form-horizontal" role="form">
+				<fieldset>
+				  <legend><h3>个人资料修改</h3></legend>
+				  <div class="form-group has-feedback">
+				    <label for="firstname" class="col-sm-2 control-label">用户名</label>
+				    <div class="col-md-5">
+				      <input type="text" class="form-control" id="firstname" placeholder="请输入账户名" value="kkkkkkk" required="">
+				   	  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+				    </div>
+				  </div>
+				  <div class="form-group has-feedback">
+				    <label for="lastname" class="col-sm-2 control-label">密码</label>
+				    <div class="col-md-5"  style="padding-top: 7px;">
+				     <input type="radio" name="optionsRadiosinline" value="option1" checked>男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				     <input type="radio" name="optionsRadiosinline" value="option1">女
+				    </div>
+				  </div>
+				  <div class="form-group has-feedback">
+				    <label for="lastname" class="col-sm-2 control-label">出生日期</label>
+				    <div class="col-md-5">
+				      <input type="date" class="form-control" required="" value="2000-04-20">
+				    </div>
+				  </div>
+				  <div class="form-group has-feedback">
+				    <label for="lastname" class="col-sm-2 control-label">所在学校</label>
+				    <div class="col-md-5">
+				      <input type="text" class="form-control" value="悬赏大学" required>
+				    </div>
+				  </div>
+				   <div class="form-group has-feedback">
+				    <label for="lastname" class="col-sm-2 control-label">手机号码</label>
+				    <div class="col-md-5">
+				      <input type="text" class="form-control" id="lastname01" value="13809786564" placeholder="请输入手机号码" required="">
+				      <span class="glyphicon glyphicon-earphone form-control-feedback"></span>
+				    </div>
+				  </div>
+				  
+				  <div class="form-group has-feedback">
+				    <label for="lastname" class="col-sm-2 control-label">现居地址</label>
+				    <div class="col-md-5">
+				      <input type="text" class="form-control" value="江苏省苏州市独墅湖园区" placeholder="请输入详细地址" required="">
+				      <span class="glyphicon glyph icon-comment form-control-feedback"></span>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <div class="checkbox">
+				      </div>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="reset" class="btn btn-default btnRe">重置</button>
+				      <button type="button" id="btn-x" class="btn btn-default btnSu">保存</button>
+				    </div>
+				  </div>
+				</fieldset>
+			</form>
+		</div>
+		<!--表单结束-->
+		
+
+			<!--foot-->
+		<div class="container-fluid footer">
+			<div class="row row01">
+				<div class="col-md-offset-1 col-md-1 hidden-xs">
+					<img src="../img/logo.png" />
+				</div>
+				<div class="col-md-7 jianju25">
+					<ul class="nav-b">
+						<li class="liLeft">
+							关于我们
+							<ul class="sub-nav">
+								<li>
+									<a href="/aboutus/" rel="nofollow">公司简介</a>
+								</li>
+								<li>
+									<a href="/progress/" rel="nofollow">悬赏历程</a>
+								</li>
+								<li>
+									<a href="/joinus/" rel="nofollow">加入悬赏</a>
+								</li>
+								<li>
+									<a href="/contactus/" rel="nofollow">联系悬赏</a>
+								</li>
+								<li>
+									<a href="/jiameng/" rel="nofollow">渠道招商</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">
+							<a href="/chuangpeisheng/" rel="nofollow">悬赏创培生</a>
+						</li>
+						<li class="liLeft">悬赏资讯
+							<ul class="sub-nav">
+								<li>
+									<a target="_blank" href="http://news.doumi.com/">悬赏新闻</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://news.doumi.com/jq/">工作技巧</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">帮助中心
+							<ul class="sub-nav">
+								<li>
+									<a href="/payservice/" rel="nofollow">有偿服务</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">
+							<a href="/sitemap.htm">网站地图</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 jianju25 hidden-xs">
+					<div class="hotline">
+						<span class="title">客服热线</span>
+						<span class="phone">010-57977077</span>
+						<span class="title">合作邮箱</span>
+						<span class="email">ecom#doumi.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="copyright">
+					<p style="margin-bottom: -10px!important;">&copy;2015-2018 悬赏&trade; 北京世诚优聘科技发展有限公司
+						<a target="_blank" href="#" rel="nofollow">京公网安备11010802022669号</a> 联系电话：010-57317000</p>
+				</div>
+			</div>
+		</div>
+<!--foot-->
+
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#personalCenter_li").click(function(){
+					if($("#personalCenter_ul").css("display")=="none"){
+						$("#personalCenter_ul").css('display','block');
+					}else if($("#personalCenter_ul").css("display")=="block"){
+						$("#personalCenter_ul").css('display','none');
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			.myLogin{
+				border: 1px solid #ccc;
+				border-radius: 20px;
+				padding: 30px;
+			}
+			body{
+				background-color: #E6E9EA;
+			}
+		</style>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.css" />
+		<title>微博登录高校悬赏令</title>
+	</head>
+	<body>
+		<center>
+			<div id="" style="margin: auto;">
+				<img src="../img/wb_xline_s1.png" />
+		    </div>			
+		</center>
+		
+		<!--表单-->
+		<div class="container myLogin" style="width: 500px; margin-top:0px;">
+			<form class="form-horizontal" role="form">
+				<fieldset>
+					<div id="weibo_login">
+						<legend><a href="#" style="margin-bottom: 20px;"><img src="../img/WB_logo.png"/></a></legend>
+					</div>
+					<p>使用你的微博帐号访问<a>高校悬赏令</a>，并同时登录微博</p>
+					<br>
+					
+				  <div class="form-group has-feedback">
+				    <label for="firstname" class="col-sm-2 control-label">账号：</label>
+				    <div class="col-md-5">
+				      <input type="text" class="form-control" id="firstname" placeholder="请输入账号">
+				    </div>
+				  </div>
+				  
+				  <div class="form-group has-feedback">
+				    <label for="lastname" class="col-sm-2 control-label">密码：</label>
+				    <div class="col-md-5">
+				      <input type="password" class="form-control" id="lastname" placeholder="请输入密码">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <button type="submit" class="btn btn-danger">登录</button>
+				    </div>
+				  </div>
+				</fieldset>
+			</form>
+		</div>
+		
+		
+		<!--引入Jqueey.min.js-->
+		<script type="text/javascript" src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script type="text/javascript" src="../plugins/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

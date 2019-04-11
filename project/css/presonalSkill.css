@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/*个人技能开始*/
+body{
+	background-color: #fef9dc;
+}
+.skill{
+	padding: 30px 0 50px 0;
+	background-size:cover;
+	background-color: #fff;
+}
+.skillProgress-strength{
+	float: left;
+}
+.skillProgress-strong
+,.skillProgress-middle
+,.skillProgress-weak{
+	cursor: default;
+	text-align: center;
+	margin-left: 5px;
+	line-height: 20px;
+	display: block;
+	float: left;
+	width: 50px;
+	height: 20px;
+	background-color: #C0A16B;
+	color: #fff;
+}
+.skillTextarea{
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	margin-left: 5px;
+	resize: none;
+}
+.skillCol,.skillTitle{
+	text-align: center;
+}
+.skillTitle{
+	margin-bottom: 110px;
+}
+.skillTitle h2{
+	font-size: 36px;
+    font-weight: 400;
+}
+.skillZ p,.skillZ input{
+	float: left;
+}
+.skillZ p{
+	margin-bottom: 0;
+}
+.scol-r{
+	/*text-align: right;*/
+}
+.skillInput{
+	margin-left: 5px;
+}
+.skillRow{
+	margin-bottom: 20px;
+}
+.skillRow02{
+	margin-top: 100px;
+}
+.skillSubmit{
+	border:0px;
+	font-size: 16px;
+	outline: none;
+	width: 100px;
+	height: 40px;
+	background-color: #F0AD4E;
+	color: #fff;
+}
+.skillProgressClick{
+	background-color: orange;
+}
+@media all and (max-width: 768px) {
+	.skill{
+		text-align: center;
+	}
+	.tro{
+		margin-left: 103px;
+	}
+}
+/*个人技能结束*/

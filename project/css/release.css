@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+/*release开始*/
+
+body {
+	background-color: #f2f2f2;
+	/*font-size: 140px;*/
+	line-height: 150%;
+	color: #4b4b4b;
+}
+
+.buttom {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.content_box {
+	background: #FFFFFF;
+	box-shadow: 0 0 5px #ccc inset;
+	border-radius: 5px;
+}
+
+.release_form {
+	padding: 5%;
+	margin-bottom: 5%;
+}
+
+.release_skill_t1 {
+	border-bottom: 1px dashed #ccc;
+}
+
+.release_form dt {
+	line-height: 24px;
+	padding-top: 15px;
+	font-size: 13px;
+	font-weight: 100;
+	color: #707070;
+}
+.release_skillWrite_01{
+	color: #000!important;
+	font-size: 15px!important;
+	font-weight: 400!important;
+}
+.release_form dt b {
+	margin-left: 5px;
+	color: #FF7878;
+}
+
+.release_form h5 {
+	font-weight: 900;
+}
+
+.error {
+	border: 1px solid red;
+	box-shadow: 0 0 7px tomato inset;
+}
+
+.hidden {
+	display: none;
+}
+
+.error_span {
+	color: red;
+}
+textarea{
+	resize: none;
+}
+
+/*release结束*/

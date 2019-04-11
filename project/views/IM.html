@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>即时聊天</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style type="text/css">
+			body{
+				background-color: #f1f3f8;
+			}
+			a{
+				text-decoration: none!important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container hidden-xs hidden-sm"> 
+			<div class="main-im">
+				<div class="col-md-3 col-md-offset-1">
+					<div class="im-left01 webim-box-header">
+						<img src="../img/200x200_avatar_75.gif"/>
+						<span>Gaoxiao007</span>
+					</div>
+					<div class="webim-people-list">
+						<div class="im-left02">
+							<span class="head-img-wrap">
+								<img src="https://avatar.zbjimg.com/011/65/62/200x200_avatar_26.jpg!small" class="people-online-img"> 
+								<a class="chat-user-name">匠派专业制作网站</a>
+								<a class="chat-msg-time">11.25</a>
+								<i class="online"></i>
+							</span>
+						</div>
+						<div class="im-left03">
+						
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 hidden-xs">
+					<div class="im-mid01">
+						<span>
+							<a href="#" target="_blank" class="shop-name">匠派专业制作网站</a> 
+							<i class="el-icon-edit-outline"></i>
+						</span>
+						<span class="terminal"> [iPhone-在线]</span>
+					</div>
+					<div class="im-mid02">
+						<div class="chat-panel-header">
+							<span>
+								<i class="chat-panel-ysxiaohao"></i> 
+							</span>	
+						</div>
+						<div class="chat-content-wrap">
+							<div class="view-more"><a style="color: black;">没有更多记录</a></div>
+							<div id="im-blo" class="im-clo">
+								<a></a>
+							</div>
+						</div>
+						<div class="chat-input-wrap">
+							<div style="width: 100%;height: 0;border-top: 0.05em solid #CCCCCC;margin-bottom: 10px;">
+							</div>
+							<div class="chat-tool-wrap">
+								<div class="chat-tool-left">
+									<span>
+										<i class="webim-emoji el-popover__reference" aria-describedby="el-popover-5597" tabindex="0"></i>
+									</span> 
+									<span>
+										<div role="tooltip" id="el-popover-5471" aria-hidden="true" class="el-popover el-popper upload-file-wrap" style="display: none;" tabindex="0">
+											
+										<div id="webim-upload-file" class="w-upload-base w-upload-btn" browse_button="w-upload-btn" style="position: relative; z-index: 1;">
+											<span id="webim-upload-file">本地文件</span>
+										</div> 
+										<div id="webim-upload-img" class="w-upload-base w-upload-btn" browse_button="w-upload-btn" style="position: relative; z-index: 1;">
+											<span id="webim-upload-img">发送图片</span>
+										</div> 
+										<div id="html5_1cqq277g3sj5cc8d2q1jkcrl84_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: hidden; z-index: 0;">
+											<input id="html5_1cqq277g3sj5cc8d2q1jkcrl84" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept=".gif,.jpg,.jpeg,.png,.zip,.rar,.doc,.xls,.txt,.docx,.xlsx,.ppt,.pptx,.wps,.pages,.mp4,.pdf,.psd,.apk,.mp3,.mp4,.avi,.zip,.ai,.mp3,.wma,.rm" tabindex="-1">
+										</div>
+										<div id="html5_1cqq277g71d31ps49bbmqk9f47_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: hidden; z-index: 0;">
+											<input id="html5_1cqq277g71d31ps49bbmqk9f47" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept=".jpg,.png,.jpeg" tabindex="-1">
+										</div>
+									</div>
+									<i class="upload-file el-popover__reference" aria-describedby="el-popover-5471" tabindex="0"></i>
+									</span> 
+									<span>
+										<div role="tooltip" id="el-popover-318" aria-hidden="true" class="el-popover el-popper screenshot" style="display: none;" tabindex="0"><!---->
+											<span>将您已截好的图片直接粘贴至输入框中即可(说明：目前暂不支持IE10以下浏览器)</span> 
+										</div>
+										<i class="set-screenshot el-popover__reference" aria-describedby="el-popover-318" tabindex="0"></i>
+									</span> 
+									<span>
+									<div role="tooltip" id="el-popover-3817" aria-hidden="true" class="el-popover el-popper evaluation-tip" style="display: none;" tabindex="0"><!---->
+										<span>结束咨询,评价TA</span> 
+									</div>
+									<i class="set-evaluation el-popover__reference" aria-describedby="el-popover-3817" tabindex="0"></i>
+									</span>
+								</div>
+							</div>
+							<div class="chat-input-text-wrap">
+								<textarea id="webim-chat-input" class="webim-chat-input" style="position: relative;"></textarea>
+							</div>
+							<div class="chat-input-button">
+								<span class="chat-tip">为了您的资金安全，请勿线下交易！</span> 
+								<button id="im-btn" type="button" class="el-button submit-message el-button--primiry el-button--mini">
+									<span>发送</span>
+								</button> 
+								<div class="el-dialog__wrapper" style="display: none;">
+									<div class="el-dialog" style="margin-top: 15vh;">
+										<div class="el-dialog__header">
+											<span class="el-dialog__title">确认发送图片</span>
+											<button type="button" aria-label="Close" class="el-dialog__headerbtn">
+												<i class="el-dialog__close el-icon el-icon-close"></i>
+											</button>
+										</div><!----><!---->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!--<div class="col-md-3">
+					
+				</div>-->
+			</div>
+			
+			</div>
+			</div>
+			<!--手机聊天-->
+			<div class="container hidden-md hidden-lg">
+				<div class="col-md-6">
+					<div class="im-mid01-f">
+						<span>
+							<a href="#" target="_blank" class="shop-name">匠派专业制作网站</a> 
+							<i class="el-icon-edit-outline"></i>
+						</span>
+						<span class="terminal"> [iPhone-在线]</span>
+					</div>
+					<div class="im-mid02-f">
+						<div class="chat-panel-header">
+							<span>
+								<i class="chat-panel-ysxiaohao"></i> 
+							</span>	
+						</div>
+						<div class="chat-content-wrap">
+							<div class="view-more"><a style="color: black;">没有更多记录</a></div>
+							<div id="im-blo-f" class="im-blo-f">
+							</div>
+						</div>
+						<div class="chat-input-wrap">
+							<div style="width: 100%;height: 0;border-top: 0.05em solid #CCCCCC;margin-bottom: 10px;">
+							</div>
+							<div class="chat-tool-wrap">
+								<div class="chat-tool-left">
+									<span>
+										<i class="webim-emoji el-popover__reference" aria-describedby="el-popover-5597" tabindex="0"></i>
+									</span> 
+									<span>
+										<div role="tooltip" id="el-popover-5471" aria-hidden="true" class="el-popover el-popper upload-file-wrap" style="display: none;" tabindex="0">
+											
+										<div id="webim-upload-file" class="w-upload-base w-upload-btn" browse_button="w-upload-btn" style="position: relative; z-index: 1;">
+											<span id="webim-upload-file">本地文件</span>
+										</div> 
+										<div id="webim-upload-img" class="w-upload-base w-upload-btn" browse_button="w-upload-btn" style="position: relative; z-index: 1;">
+											<span id="webim-upload-img">发送图片</span>
+										</div> 
+										<div id="html5_1cqq277g3sj5cc8d2q1jkcrl84_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: hidden; z-index: 0;">
+											<input id="html5_1cqq277g3sj5cc8d2q1jkcrl84" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept=".gif,.jpg,.jpeg,.png,.zip,.rar,.doc,.xls,.txt,.docx,.xlsx,.ppt,.pptx,.wps,.pages,.mp4,.pdf,.psd,.apk,.mp3,.mp4,.avi,.zip,.ai,.mp3,.wma,.rm" tabindex="-1">
+										</div>
+										<div id="html5_1cqq277g71d31ps49bbmqk9f47_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; overflow: hidden; z-index: 0;">
+											<input id="html5_1cqq277g71d31ps49bbmqk9f47" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept=".jpg,.png,.jpeg" tabindex="-1">
+										</div>
+									</div>
+									<i class="upload-file el-popover__reference" aria-describedby="el-popover-5471" tabindex="0"></i>
+									</span> 
+									<span>
+										<div role="tooltip" id="el-popover-318" aria-hidden="true" class="el-popover el-popper screenshot" style="display: none;" tabindex="0"><!---->
+											<span>将您已截好的图片直接粘贴至输入框中即可(说明：目前暂不支持IE10以下浏览器)</span> 
+										</div>
+										<i class="set-screenshot el-popover__reference" aria-describedby="el-popover-318" tabindex="0"></i>
+									</span> 
+									<span>
+									<div role="tooltip" id="el-popover-3817" aria-hidden="true" class="el-popover el-popper evaluation-tip" style="display: none;" tabindex="0"><!---->
+										<span>结束咨询,评价TA</span> 
+									</div>
+									<i class="set-evaluation el-popover__reference" aria-describedby="el-popover-3817" tabindex="0"></i>
+									</span>
+								</div>
+							</div>
+							<div class="chat-input-text-wrap">
+								<textarea id="webim-chat-input-f" class="webim-chat-input" style="position: relative;"></textarea>
+							</div>
+							<div class="chat-input-button">
+								<span class="chat-tip">为了您的资金安全，请勿线下交易！</span> 
+								<button id="im-btn-f" type="button" class="el-button submit-message el-button--primiry el-button--mini">
+									<span>发送</span>
+								</button> 
+								<div class="el-dialog__wrapper" style="display: none;">
+									<div class="el-dialog" style="margin-top: 15vh;">
+										<div class="el-dialog__header">
+											<span class="el-dialog__title">确认发送图片</span>
+											<button type="button" aria-label="Close" class="el-dialog__headerbtn">
+												<i class="el-dialog__close el-icon el-icon-close"></i>
+											</button>
+										</div><!----><!---->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			</div>
+			<!--表情-->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#im-btn").click(function(){
+					var val = $("#webim-chat-input").val();
+					if (val!=null){
+//						$("#im-blo").html(val);
+						$("#webim-chat-input").val("");
+						$("#im-blo").append("<div class='im-bor'>"+val+"</div>"+"<div class='im-img'><img src="+"../img/200x200_avatar_75.gif"+"></div><br><br>");
+					}
+				});
+				$("#im-btn-f").click(function(){
+					var val = $("#webim-chat-input-f").val();
+					$("#im-blo-f").append("<div class='im-bor'>"+val+"</div>"+"<div class='im-img'><img src="+"../img/200x200_avatar_75.gif"+"></div><br><br>");
+					$("#webim-chat-input-f").val("");
+				});
+			});
+		</script>
+	</body>
+</html>

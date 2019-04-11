@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>消息通知</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layoutFoot.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layoutHeader.css" />
+		<link rel="stylesheet" href="../css/message.css" />
+	</head>
+
+	<body>
+		<!--导航开始-->
+		<div class="container-fluid header">
+			<div class="row">
+				<nav class="navbar navbar-default navBg" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						            <span class="sr-only">切换导航</span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+       						</button>			
+							<a href="#" class="logoSet"><img style="margin-top: 10px;" src="../img/logo.png" /></a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav  navSet" style="margin-left: 100px;">
+								<li>
+									<a href="index.html">主页</a>
+								</li>
+								<li>
+									<a href="release.html">发布</a>
+								</li>
+								<li>
+									<a href="find.html">悬赏</a>
+								</li>
+								<li id="personalCenter_li">
+									<a href="#" id="personalCenter_a">个人中心 <b class="caret"></b></a>
+									<ul class="personalCenter t" id="personalCenter_ul">
+					                    <li><a href="personalInformation.html" id="person01">个人资料</a></li>
+					                    <li><a href="PersonalSkills.html">个人技能</a></li>
+					                    <li><a href="message.html" style="color: #ffaa2c!important;">消息通知</a></li>
+					                    <li><a href="orderInformation.html">我的订单</a></li>
+					                </ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right navRset" style="margin-left: 100px;">
+								<li>
+									<a href="register.html"><span class="glyphicon glyphicon-user"></span> 注册</a>
+								</li>
+								<li>
+									<a href="login.html"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--导航结束-->
+		
+		<!--中间内容开始-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="message_wrap buttom">
+					<div class="content_left col-lg-2 col-md-1 col-sm-1 ">
+
+					</div>
+					<div class="content_center col-lg-0 col-md-10 col-sm-10 col-xs-12">
+						<div class="content_center col-lg-2 col-md-4 col-sm-4 col-xs-3">
+							<div class="sub-menu">
+								<a id="system_link" class="active" href="#">
+									系统通知
+
+								</a>
+								<a id="personal_link" class="" href="#">
+									用户私信
+
+								</a>
+							</div>
+						</div>
+						<div class="content_center col-lg-8 col-md-8 col-sm-8 col-xs-9">
+							<div id="system" class="center-ct">
+								<div class="letter-cont" id="utopia_widget_4">
+									<div class="letter-cont-top">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><span>有 <b class="unread-num">4</b> 条系统通知未读</span></div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<dl>
+												<dd class="letter-del-pl" data-linkid="zbjletter-function-alldelete">
+													<i class="icon-trash-bd"></i>批量删除
+												</dd>
+												<dd class="letter-del-choose" style="display:none ;">
+													<input class="del_checkbox" type="checkbox" name="checkall" />
+													<span class="letter-del-all active">全选</span>
+													<span class="letter-del-sure">删除选中</span>
+													<span class="letter-del-cancel">取消</span>
+													<div class="letter-del-dialog">
+														<i class="i-arrow"></i>
+														<p class="p-txt">消息被删除后不可恢复，确定要删除吗？</p>
+														<p class="p-btn">
+															<button class="dialog-sure">确定</button>
+															<button class="dialog-cancel">取消</button>
+														</p>
+													</div>
+												</dd>
+											</dl>
+										</div>
+
+									</div>
+									<div class="letter-cont-cent">
+										<div class="letter-cont-list">
+											<ul style="padding: 0px;">
+
+												<li data-id="292473608" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																恭喜您成功注册猪八戒网，激活雇主俱乐部成为会员即送50积分，马上领积分抽大奖吧!点击即可激活：
+																<a href="http://t.cn/Rm16OD5" target="_blank">http://t.cn/Rm16OD5</a>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li data-id="292473608" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																恭喜您成功注册猪八戒网，激活雇主俱乐部成为会员即送50积分，马上领积分抽大奖吧!点击即可激活：
+																<a href="http://t.cn/Rm16OD5" target="_blank">http://t.cn/Rm16OD5</a>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li data-id="292473608" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																恭喜您成功注册猪八戒网，激活雇主俱乐部成为会员即送50积分，马上领积分抽大奖吧!点击即可激活：
+																<a href="http://t.cn/Rm16OD5" target="_blank">http://t.cn/Rm16OD5</a>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li data-id="292473607" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																亲爱的用户，欢迎加入猪八戒网。经过了首次体验，您一定对网站有了初步的认识。喜欢或是不喜欢，问题或是建议，都请您告诉我们。您的评价将是我们进步的重要方向，感谢您的支持。评价猪八戒：
+																<a href="http://task.zbj.com/fsurvey/index-tid-209-sid-33.html">http://task.zbj.com/fsurvey/index-tid-209-sid-33.html</a>
+															</div>
+														</div>
+													</div>
+												</li>
+
+											</ul>
+										</div>
+										<div class="letter-cont-pnav">
+											<div class="pagination">
+												<ul>
+													<li class="disabled">
+														<a class="pagination-prev" rel="nofollow" href="javascript:;">«</a>
+													</li>
+													<li class="active">
+														<a rel="nofollow" href="javascript:;" data-id="1">1</a>
+													</li>
+													<li class="disabled">
+														<a class="pagination-next" rel="nofollow" href="javascript:;">»</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="singele-del">
+										<p class="p-txt">消息被删除后不可恢复，确定要删除吗？</p>
+										<p class="p-btn">
+											<button class="dialog-sure">确定</button>
+											<button class="dialog-cancel">取消</button>
+										</p>
+									</div>
+								</div>
+								<div class="letter-loading">
+									<div class="loading-wrap">
+										<img src="//as.zbjimg.com/static/nodejs-zbj-i-web/static/common/img/loading_50c5e3e.gif" alt="">
+									</div>
+								</div>
+							</div>
+							<div id="personal" class="center-ct" style="display: none;">
+								<div class="letter-cont" id="utopia_widget_4">
+									<div id="personal" class="letter-cont-top">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><span>有 <b class="unread-num">6</b> 条系统通知未读</span></div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<dl>
+												<dd class="letter-del-pl" data-linkid="zbjletter-function-alldelete">
+													<i class="icon-trash-bd"></i>批量删除
+												</dd>
+												<dd class="letter-del-choose" style="display:none ;">
+													<input class="del_checkbox" type="checkbox" name="checkall" />
+													<span class="letter-del-all active">全选</span>
+													<span class="letter-del-sure">删除选中</span>
+													<span class="letter-del-cancel">取消</span>
+													<div class="letter-del-dialog">
+														<i class="i-arrow"></i>
+														<p class="p-txt">消息被删除后不可恢复，确定要删除吗？</p>
+														<p class="p-btn">
+															<button class="dialog-sure">确定</button>
+															<button class="dialog-cancel">取消</button>
+														</p>
+													</div>
+												</dd>
+											</dl>
+										</div>
+
+									</div>
+									<div class="letter-cont-cent">
+										<div class="letter-cont-list">
+											<ul style="padding: 0px;">
+												<li data-id="292473608" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																恭喜您成功注册猪八戒网，激活雇主俱乐部成为会员即送50积分，马上领积分抽大奖吧!点击即可激活：
+																<a href="http://t.cn/Rm16OD5" target="_blank">http://t.cn/Rm16OD5</a>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li data-id="292473608" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																恭喜您成功注册猪八戒网，激活雇主俱乐部成为会员即送50积分，马上领积分抽大奖吧!点击即可激活：
+																<a href="http://t.cn/Rm16OD5" target="_blank">http://t.cn/Rm16OD5</a>
+															</div>
+														</div>
+													</div>
+												</li>
+												<li data-id="292473608" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																恭喜您成功注册猪八戒网，激活雇主俱乐部成为会员即送50积分，马上领积分抽大奖吧!点击即可激活：
+																<a href="http://t.cn/Rm16OD5" target="_blank">http://t.cn/Rm16OD5</a>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li data-id="292473608" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																恭喜您成功注册猪八戒网，激活雇主俱乐部成为会员即送50积分，马上领积分抽大奖吧!点击即可激活：
+																<a href="http://t.cn/Rm16OD5" target="_blank">http://t.cn/Rm16OD5</a>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li data-id="292473607" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																亲爱的用户，欢迎加入猪八戒网。经过了首次体验，您一定对网站有了初步的认识。喜欢或是不喜欢，问题或是建议，都请您告诉我们。您的评价将是我们进步的重要方向，感谢您的支持。评价猪八戒：
+																<a href="http://task.zbj.com/fsurvey/index-tid-209-sid-33.html">http://task.zbj.com/fsurvey/index-tid-209-sid-33.html</a>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li data-id="292473608" data-rflg="1">
+
+													<div class="list-tit">
+
+														<span class="info-state read"></span>
+
+														<h2 class="col-lg-3 col-xs-12">新会员专享50积分</h2>
+														<span class="info-date col-lg-3 col-xs-12">2018-10-25  18:46:50</span>
+														<p class="col-lg-3 col-xs-12">
+															<span class="info-choose"></span>
+															<span class="info-del" data-linkid="zbjletter-function-singledel-292473608">删除 </span>
+															<input class="del_checkbox" type="checkbox" name="del_checkbox" />
+															<span class="info-state-read" >已读</span>
+
+														</p>
+													</div>
+													<div class="list-info">
+														<div class="info-txt-warp up">
+															<div class="list-info-txt">
+																恭喜您成功注册猪八戒网，激活雇主俱乐部成为会员即送50积分，马上领积分抽大奖吧!点击即可激活：
+																<a href="http://t.cn/Rm16OD5" target="_blank">http://t.cn/Rm16OD5</a>
+															</div>
+														</div>
+													</div>
+												</li>
+
+											</ul>
+										</div>
+										<div class="letter-cont-pnav">
+											<div class="pagination">
+												<ul>
+													<li class="disabled">
+														<a class="pagination-prev" rel="nofollow" href="javascript:;">«</a>
+													</li>
+													<li class="active">
+														<a rel="nofollow" href="javascript:;" data-id="1">1</a>
+													</li>
+													<li class="disabled">
+														<a class="pagination-next" rel="nofollow" href="javascript:;">»</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="singele-del">
+										<p class="p-txt">消息被删除后不可恢复，确定要删除吗？</p>
+										<p class="p-btn">
+											<button class="dialog-sure">确定</button>
+											<button class="dialog-cancel">取消</button>
+										</p>
+									</div>
+								</div>
+								<div class="letter-loading">
+									<div class="loading-wrap">
+										<img src="//as.zbjimg.com/static/nodejs-zbj-i-web/static/common/img/loading_50c5e3e.gif" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="content_left col-lg-2 col-md-1 col-sm-1">
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--foot-->
+		<div class="container-fluid footer">
+			<div class="row row01">
+				<div class="col-md-offset-1 col-md-1 hidden-xs">
+					<img src="../img/logo.png" />
+				</div>
+				<div class="col-md-7 jianju25">
+					<ul class="nav-b">
+						<li class="liLeft">
+							关于我们
+							<ul class="sub-nav">
+								<li>
+									<a href="/aboutus/" rel="nofollow">公司简介</a>
+								</li>
+								<li>
+									<a href="/progress/" rel="nofollow">悬赏历程</a>
+								</li>
+								<li>
+									<a href="/joinus/" rel="nofollow">加入悬赏</a>
+								</li>
+								<li>
+									<a href="/contactus/" rel="nofollow">联系悬赏</a>
+								</li>
+								<li>
+									<a href="/jiameng/" rel="nofollow">渠道招商</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">
+							<a href="/chuangpeisheng/" rel="nofollow">悬赏创培生</a>
+						</li>
+						<li class="liLeft">悬赏资讯
+							<ul class="sub-nav">
+								<li>
+									<a target="_blank" href="http://news.doumi.com/">悬赏新闻</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://news.doumi.com/jq/">工作技巧</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">帮助中心
+							<ul class="sub-nav">
+								<li>
+									<a href="/payservice/" rel="nofollow">有偿服务</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">
+							<a href="/sitemap.htm">网站地图</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 jianju25 hidden-xs">
+					<div class="hotline">
+						<span class="title">客服热线</span>
+						<span class="phone">010-57977077</span>
+						<span class="title">合作邮箱</span>
+						<span class="email">ecom#doumi.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="copyright">
+
+					<p style="margin-bottom: -10px!important;">&copy;2015-2018 悬赏&trade; 北京世诚优聘科技发展有限公司
+						<a target="_blank" href="#" rel="nofollow">京公网安备11010802022669号</a> 联系电话：010-57317000</p>
+				</div>
+			</div>
+		</div>
+		<!--foot-->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/message.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#personalCenter_li").click(function(){
+					if($("#personalCenter_ul").css("display")=="none"){
+						$("#personalCenter_ul").css('display','block');
+					}else if($("#personalCenter_ul").css("display")=="block"){
+						$("#personalCenter_ul").css('display','none');
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

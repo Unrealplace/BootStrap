@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body{
+	background-color: #F5F5F5;
+}
+.sub a{
+	text-decoration: none;
+	display: block;
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    color: #ffaa2c;
+    font-size: 16px;
+    padding-left: 45px;
+    background: #fafafa;
+    width: 158px;
+}
+.center-ctr{
+	height: 504px;
+	padding: 20px 10px;
+	background-color: #fff;
+	float: left;
+	width: 805px;
+}
+.letter-cont{
+	padding: 0 20px;
+}
+.letter-ctrCenter li{
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+	list-style: none;
+}
+.deleteBtn p{
+	margin-top: 34px;
+}
+.webP p{
+	margin-top: 10px;
+}
+.deleteBtn button{
+	color: #ffaa2c;
+	width: 60px;
+	background-color: #fff;
+	border: 1px solid #ffaa2c;
+	border-radius: 5px;
+	outline: none;
+}
+.deleteBtn button:hover{
+	background-color: #ffaa2c;
+	color: #fff;
+	outline: none;
+}
+.row{
+	margin: 0!important;
+}
+@media all and (max-width:768px ) {
+	.center-ctr{
+		width: 348px;
+	}
+	.minC{
+		margin-left: 0!important;
+	}
+	.center-ctr{
+		height: 1014px;
+	}
+	.navbar-collapse {
+		padding-right: 10px;
+    	padding-left: 0;
+	}
+}

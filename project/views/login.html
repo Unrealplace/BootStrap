@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!--让浏览器使用最新的IE内核进行渲染页面-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layoutFoot.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layoutHeader.css"/>
+		<title>用户登录</title>
+		<style type="text/css">
+			#index_img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				background: url("../img/pattern.jpg");
+			}
+			#login {
+				padding: 1px;
+				box-shadow: #180D5B;
+				opacity: 80%;
+			}
+			
+			.authorize-login-title-left {
+				color: #999;
+				line-height: 12px;
+				padding: 20px;
+			}
+			
+			.weibo {
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				padding: 15px;
+			}
+			
+			.qq {
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				padding: 15px;
+			}
+			
+			.weixin {
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				padding: 15px;
+			}
+			
+			#login-style {
+				margin-top: -5px;
+				margin-left: 10px;
+			}
+			
+			#login-style a:hover {
+				position: relative;
+				top: -5px;
+			}
+			
+			#forget {
+				float: right;
+			}
+			
+			#forget a:hover {
+				color: orange;
+			}
+			
+			.wrap-right {
+				margin: 80px 0;
+				/*padding: 5%;*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--导航开始-->
+		<div class="container-fluid header">
+			<div class="row">
+				<nav class="navbar navbar-default navBg" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						            <span class="sr-only">切换导航</span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+       						</button>			
+							<a href="#" class="logoSet"><img style="margin-top: 10px;" src="../img/logo.png" /></a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav  navSet" style="margin-left: 100px;">
+								<li>
+									<a href="index.html">主页</a>
+								</li>
+								<li>
+									<a href="release.html">发布</a>
+								</li>
+								<li>
+									<a href="find.html">悬赏</a>
+								</li>
+								<li id="personalCenter_li">
+									<a href="#" id="personalCenter_a">个人中心 <b class="caret"></b></a>
+									<ul class="personalCenter t" id="personalCenter_ul">
+					                    <li><a href="personalInformation.html" id="person01">个人资料</a></li>
+					                    <li><a href="PersonalSkills.html">个人技能</a></li>
+					                    <li><a href="message.html">消息通知</a></li>
+					                    <li><a href="orderInformation.html">我的订单</a></li>
+					                </ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--导航结束-->
+		
+		
+		<div class="container">
+		<div id="index">
+			<!--<div id="head">
+
+			</div>-->
+			<!--首页背景图片引入-->
+			<div id="login-wrap">
+				<!--<img src="img/pattern.jpg" />-->
+				<!--登录页面开始-->
+				<div class="wrap-left col-lg-7 col-xs-0"></div>
+				<div class="wrap-right col-lg-4 col-xs-12">
+					<div id="login" class="col-lg-12 col-xs-12" style="background-color: whitesmoke;">
+						<form class="form-horizontal" role="form">
+							<div class="form-group" style="margin: 20px;">
+								<label for="firstname" class="col-sm-2 control-label">账&nbsp;&nbsp;号:</label>
+								<div class="col-lg-10 ">
+									<input type="text" class="form-control" id="firstname" placeholder="请输入账号">
+								</div>
+							</div>
+							<div class="form-group " style="margin: 20px;">
+								<label for="lastname" class="col-sm-2 control-label">密&nbsp;&nbsp;码:</label>
+								<div class="col-lg-10">
+									<input type="password" class="form-control" id="lastname" placeholder="密码">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-2 col-xs-2">
+								</div>
+								<div class="col-lg-8 col-xs-10">
+									<div class="col-lg-6 col-xs-6"> <label>
+						          <input type="checkbox">记住密码
+						        </label></div>
+									<div class="col-lg-6 col-xs-6"> <a href="#" data-toggle="modal" data-target="#myModal">忘记密码？</a></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-12 col-sm-12 ">
+									<center>
+										<button type="submit" class="btn btn-default" style="width: 200px; background-color: orange; font-weight: 900;color: white;">登&nbsp;&nbsp;录</button>
+									</center>
+									<!--     <button type="submit" class="btn btn-default">注册</button>-->
+								</div>
+							</div>
+						</form>
+						<hr color="#000000">
+						<span class="authorize-login-title-left">
+		                                                      使用第三方账号登录</span><br>
+						<div id="login-style">
+							<a href="weibo_login.html" class="weibo" style="margin-top: 0px;"><img src="../img/weibo.png" /></a>
+							<a href="qq_login.html" class="qq" style="margin-top: 0px;"><img src="../img/qq.png" /></a>
+							<a href="#" class="weixin" style="margin-top: 0px;"><img src="../img/weixin.png" /></a>
+						</div>
+						<div id="forget">
+							<a href="register.html"><span>没有账号，请注册></span></a>
+						</div>
+					</div>
+					<!--登录页面结束-->
+				</div>
+				<div class="wrap-left col-lg-1 col-xs-0"></div>
+			</div>
+			
+			<!---->
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="myModalLabel">
+							忘记密码
+						</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" role="form">
+							  <div class="form-group has-feedback">
+							    <label for="email" class="col-sm-2 control-label">邮箱/手机号</label>
+							    <div class="col-md-5">
+							      <input type="text" class="form-control" id="email" placeholder="请输入邮箱/手机号">
+							    </div>
+							  </div>
+							  
+							  <div class="form-group has-feedback">
+							    <label for="lastname" class="col-sm-2 control-label">新密码</label>
+							    <div class="col-md-5">
+							      <input type="password" class="form-control" id="newpassword" placeholder="输入新的密码">
+							    </div>
+							  </div>
+							  
+							  <div class="form-group has-feedback">
+							    <label for="lastname" class="col-sm-2 control-label">新密码</label>
+							    <div class="col-md-5">
+							      <input type="password" class="form-control" id="newpassword—again" placeholder="再次输入新的密码">
+							    </div>
+							  </div>
+						</form>	
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+						</button>
+						<button type="button" class="btn btn-primary">
+							确认更改
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal -->
+		</div>
+		
+		<!---->
+		
+
+		</div>
+</div>
+
+
+<!--foot-->
+		<div class="container-fluid footer">
+			<div class="row row01">
+				<div class="col-md-offset-1 col-md-1 hidden-xs">
+					<img src="../img/logo.png" />
+				</div>
+				<div class="col-md-7 jianju25">
+					<ul class="nav-b">
+						<li class="liLeft">
+							关于我们
+							<ul class="sub-nav">
+								<li>
+									<a href="/aboutus/" rel="nofollow">公司简介</a>
+								</li>
+								<li>
+									<a href="/progress/" rel="nofollow">悬赏历程</a>
+								</li>
+								<li>
+									<a href="/joinus/" rel="nofollow">加入悬赏</a>
+								</li>
+								<li>
+									<a href="/contactus/" rel="nofollow">联系悬赏</a>
+								</li>
+								<li>
+									<a href="/jiameng/" rel="nofollow">渠道招商</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">
+							<a href="/chuangpeisheng/" rel="nofollow">悬赏创培生</a>
+						</li>
+						<li class="liLeft">悬赏资讯
+							<ul class="sub-nav">
+								<li>
+									<a target="_blank" href="http://news.doumi.com/">悬赏新闻</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://news.doumi.com/jq/">工作技巧</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">帮助中心
+							<ul class="sub-nav">
+								<li>
+									<a href="/payservice/" rel="nofollow">有偿服务</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">
+							<a href="/sitemap.htm">网站地图</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 jianju25 hidden-xs">
+					<div class="hotline">
+						<span class="title">客服热线</span>
+						<span class="phone">010-57977077</span>
+						<span class="title">合作邮箱</span>
+						<span class="email">ecom#doumi.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="copyright">
+
+					<p style="margin-bottom: -10px!important;">&copy;2015-2018 悬赏&trade; 北京世诚优聘科技发展有限公司
+						<a target="_blank" href="#" rel="nofollow">京公网安备11010802022669号</a> 联系电话：010-57317000</p>
+				</div>
+			</div>
+		</div>
+<!--foot-->
+
+
+		<!--引入Jqueey.min.js-->
+		<script type="text/javascript" src="../plugins/jquery/jquery.min.js"></script>
+		<!--引入bootstrap.min.js-->
+		<script type="text/javascript" src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#myCarousel').carousel({
+					interval: 2000
+				});
+				$("#personalCenter_li").click(function(){
+					if($("#personalCenter_ul").css("display")=="none"){
+						$("#personalCenter_ul").css('display','block');
+					}else if($("#personalCenter_ul").css("display")=="block"){
+						$("#personalCenter_ul").css('display','none');
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

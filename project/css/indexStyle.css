@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*首页样式开始*/
+.introduce{
+	text-align:center;
+	margin-top: 60px;
+}
+.introducel{
+	text-align:center;
+}
+.works{
+	font-size: 36px;
+    font-weight: 400;
+}
+.workP{
+	color: #999;
+    font-size: 16px;
+}
+.introduce a{
+	padding: 10px 20px;
+    border: 2px solid #ffaa2c;
+    background: #fff;
+    color: #ffaa2c;
+    text-decoration: none;
+    font-size: 16px;
+}
+.introduce a:hover{
+	border: 2px solid #ffaa2c;
+	color: #fff;
+	background-color: #ffaa2c;
+}
+.introduceSet a{
+	border: 2px solid #ffaa2c;
+	color: #fff;
+	background-color: #ffaa2c;
+}
+/*首页样式结束*/
+
+/*公司的介绍样式开始*/
+.introduceCompany{
+	padding-top: 50px;
+	background:url(../img/bg_s5.jpg) top center no-repeat;
+	background-size:cover;
+}
+.introduceCompany-title{
+	margin-bottom: 120px;
+}
+.introduceCompany-title
+,.introduceCompany-titleIcon01
+,.introduceCompany-titleIcon02
+,.introduceCompany-titleIcon03{
+	text-align: center;
+}
+.introduceCompany-titleIcon01
+,.introduceCompany-titleIcon02
+,.introduceCompany-titleIcon03{
+	color: #fff;
+	font-size: 18px;
+}
+.introduceCompany-titleIcon03{
+	margin-bottom: 100px;
+}
+.introduceCompany-title h2{
+	color: #fff;
+}
+.introduceCompany-title p{
+	color: #ebebeb;
+}
+.icon01
+,.icon02
+,.icon03{
+	display: block;
+    width: 75px;
+    height: 108px;
+    background: url(../img/sprite_index.png) no-repeat;
+    margin: 0 auto 50px;
+}
+.icon01{
+	background-position: 0 -729px;
+}
+.icon02{
+	background-position: -75px -729px;
+}
+.icon03{
+	background-position: -150px -729px;
+}
+/*公司的介绍样式结束*/

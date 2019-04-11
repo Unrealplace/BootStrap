@@ -1,0 +1,787 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>悬赏</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layoutFoot.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/layoutHeader.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	</head>
+
+	<body class="bgc">
+		<!--导航开始-->
+		<div class="container-fluid header">
+			<div class="row">
+				<nav class="navbar navbar-default navBg" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						            <span class="sr-only">切换导航</span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+       						</button>			
+							<a href="#" class="logoSet"><img style="margin-top: 10px;" src="../img/logo.png" /></a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav  navSet" style="margin-left: 100px;">
+								<li>
+									<a href="index.html">主页</a>
+								</li>
+								<li>
+									<a href="release.html">发布</a>
+								</li>
+								<li>
+									<a href="find.html" style="color: #ffaa2c!important;">悬赏</a>
+								</li>
+								<li id="personalCenter_li">
+									<a href="#" id="personalCenter_a">个人中心 <b class="caret"></b></a>
+									<ul class="personalCenter t" id="personalCenter_ul">
+					                    <li><a href="personalInformation.html" id="person01">个人资料</a></li>
+					                    <li><a href="PersonalSkills.html">个人技能</a></li>
+					                    <li><a href="message.html">消息通知</a></li>
+					                    <li><a href="orderInformation.html">我的订单</a></li>
+					                </ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right navRset" style="margin-left: 100px;">
+								<li>
+									<a href="register.html"><span class="glyphicon glyphicon-user"></span>注册</a>
+								</li>
+								<li>
+									<a href="login.html"><span class="glyphicon glyphicon-log-in"></span>登录</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--导航结束-->
+		
+		<!--find-->
+		<div class="container main">
+			<div class="f-pic hidden-xs"></div>
+			<div class="f-pos hidden-xs">
+				<div class="inner-w">
+					<dl class="clearfix">
+						<dt>技能：</dt>
+						<dd data-role="hover-area">
+							<div class="big-cate-wrap">
+								<ul class="big-cate clearfix">
+									<li class="" id="remen_li" data-tagname="top_0">
+										<i class="cate-remen-ico"></i>
+										<p>热门</p>
+									</li>
+									<li data-tagname="top_1" class="">
+										<i class="cate-rongyi-ico"></i>
+										<p>简单易做</p>
+									</li>
+									<li data-tagname="top_2" class="">
+										<i class="cate-paotui-ico"></i>
+										<p>跑腿办事</p>
+									</li>
+									<li data-tagname="top_3" class="">
+										<i class="cate-shinei-ico"></i>
+										<p>室内推荐</p>
+									</li>
+									<li data-tagname="top_4" class="">
+										<i class="cate-tili-ico"></i>
+										<p>体力达人</p>
+									</li>
+									<li data-tagname="top_5" class="">
+										<i class="cate-zhuanye-ico"></i>
+										<p>专业技能</p>
+									</li>
+									<li data-tagname="top_6" class="">
+										<i class="cate-yanyi-ico"></i>
+										<p>演艺达人</p>
+									</li>
+									<li data-tagname="top_7" class="">
+										<i class="cate-tese-ico"></i>
+										<p>特色职位</p>
+									</li>
+									<li data-tagname="top_8" class="">
+										<i class="cate-youxiu-ico"></i>
+										<p>优秀青年</p>
+									</li>
+									<li data-tagname="top_9" class="">
+										<i class="cate-qita-ico"></i>
+										<p>其他</p>
+									</li>
+								</ul>
+							</div>
+							<div class="filter-cate-content">
+								<ul class="filter-cate clearfix active" id="remen" style="display: block;">
+									<li>
+										<a class="cur1" href="/bj/" data-target-id="top_0" data-role="second_level_jobtype">全部</a>
+									</li>
+									<li>
+										<a href="/bj/h1/" data-target-id="top_0" data-role="second_level_jobtype">潮技能</a>
+									</li>
+									<li>
+										<a href="/bj/chuandan/" data-target-id="top_0" data-role="second_level_jobtype">传单派发</a>
+									</li>
+									<li>
+										<a href="/bj/fuwuyuan/" data-target-id="top_0" data-role="second_level_jobtype">服务员</a>
+									</li>
+									<li>
+										<a href="/bj/daogou/" data-target-id="top_0" data-role="second_level_jobtype">促销导购</a>
+									</li>
+									<li>
+										<a href="/bj/dbfj/" data-target-id="top_0" data-role="second_level_jobtype">打包分拣</a>
+									</li>
+									<li>
+										<a href="/bj/mote/" data-target-id="top_0" data-role="second_level_jobtype">礼仪模特</a>
+									</li>
+									<li>
+										<a href="/bj/kefu/" data-target-id="top_0" data-role="second_level_jobtype">话务客服</a>
+									</li>
+									<li>
+										<a href="/bj/jiajiao/" data-target-id="top_0" data-role="second_level_jobtype">家教助教</a>
+									</li>
+									<li>
+										<a href="/bj/chongchang/" data-target-id="top_0" data-role="second_level_jobtype">充场</a>
+									</li>
+									<li>
+										<a href="/bj/wenjuandiaocha/" data-target-id="top_0" data-role="second_level_jobtype">问卷调查</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/chuandan/" data-target-id="top_1" data-role="second_level_jobtype">传单派发</a>
+									</li>
+									<li>
+										<a href="/bj/dituilafang/" data-target-id="top_1" data-role="second_level_jobtype">地推拉访</a>
+									</li>
+									<li>
+										<a href="/bj/dbfj/" data-target-id="top_1" data-role="second_level_jobtype">打包分拣</a>
+									</li>
+									<li>
+										<a href="/bj/chongchang/" data-target-id="top_1" data-role="second_level_jobtype">充场</a>
+									</li>
+									<li>
+										<a href="/bj/wenjuandiaocha/" data-target-id="top_1" data-role="second_level_jobtype">问卷调查</a>
+									</li>
+									<li>
+										<a href="/bj/shenheluru/" data-target-id="top_1" data-role="second_level_jobtype">审核录入</a>
+									</li>
+									<li>
+										<a href="/bj/baojie/" data-target-id="top_1" data-role="second_level_jobtype">保洁</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/ghpd/" data-target-id="top_2" data-role="second_level_jobtype">挂号排队</a>
+									</li>
+									<li>
+										<a href="/bj/songcanyuan/" data-target-id="top_2" data-role="second_level_jobtype">送餐员</a>
+									</li>
+									<li>
+										<a href="/bj/cwjy/" data-target-id="top_2" data-role="second_level_jobtype">宠物寄养</a>
+									</li>
+									<li>
+										<a href="/bj/cpdg/" data-target-id="top_2" data-role="second_level_jobtype">车票代购</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/kefu/" data-target-id="top_3" data-role="second_level_jobtype">话务客服</a>
+									</li>
+									<li>
+										<a href="/bj/daogou/" data-target-id="top_3" data-role="second_level_jobtype">促销导购</a>
+									</li>
+									<li>
+										<a href="/bj/wenyuan/" data-target-id="top_3" data-role="second_level_jobtype">文员</a>
+									</li>
+									<li>
+										<a href="/bj/zhxz/" data-target-id="top_3" data-role="second_level_jobtype">展会协助</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/canyingong/" data-target-id="top_4" data-role="second_level_jobtype">餐饮工</a>
+									</li>
+									<li>
+										<a href="/bj/fuwuyuan/" data-target-id="top_4" data-role="second_level_jobtype">服务员</a>
+									</li>
+									<li>
+										<a href="/bj/anbao/" data-target-id="top_4" data-role="second_level_jobtype">安保</a>
+									</li>
+									<li>
+										<a href="/bj/hzzx/" data-target-id="top_4" data-role="second_level_jobtype">会展执行</a>
+									</li>
+									<li>
+										<a href="/bj/kdps/" data-target-id="top_4" data-role="second_level_jobtype">快递配送</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/jzsiji/" data-target-id="top_5" data-role="second_level_jobtype">网站建设</a>
+									</li>
+									<li>
+										<a href="/bj/jishijigong/" data-target-id="top_5" data-role="second_level_jobtype">移动开发</a>
+									</li>
+									<li>
+										<a href="/bj/meirongmeifa/" data-target-id="top_5" data-role="second_level_jobtype">软件开发</a>
+									</li>
+									<li>
+										<a href="/bj/yuesaoayi/" data-target-id="top_5" data-role="second_level_jobtype">技术服务</a>
+									</li>
+									<li>
+										<a href="/bj/xiaoshou/" data-target-id="top_5" data-role="second_level_jobtype">销售</a>
+									</li>
+									<li>
+										<a href="/bj/zxls/" data-target-id="top_5" data-role="second_level_jobtype">在线老师</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/mote/" data-target-id="top_6" data-role="second_level_jobtype">礼仪模特</a>
+									</li>
+									<li>
+										<a href="/bj/qzyy/" data-target-id="top_6" data-role="second_level_jobtype">群众演员</a>
+									</li>
+									<li>
+										<a href="/bj/yanchu/" data-target-id="top_6" data-role="second_level_jobtype">演出</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/xydl/" data-target-id="top_7" data-role="second_level_jobtype">校园代理</a>
+									</li>
+									<li>
+										<a href="/bj/jiajiao/" data-target-id="top_7" data-role="second_level_jobtype">家教助教</a>
+									</li>
+									<li>
+										<a href="/bj/jsjl/" data-target-id="top_7" data-role="second_level_jobtype">健身教练</a>
+									</li>
+									<li>
+										<a href="/bj/fanyi/" data-target-id="top_7" data-role="second_level_jobtype">翻译</a>
+									</li>
+									<li>
+										<a href="/bj/hlzc/" data-target-id="top_7" data-role="second_level_jobtype">婚礼主持</a>
+									</li>
+									<li>
+										<a href="/bj/sysx/" data-target-id="top_7" data-role="second_level_jobtype">摄影摄像</a>
+									</li>
+									<li>
+										<a href="/bj/lxdy/" data-target-id="top_7" data-role="second_level_jobtype">旅行导游</a>
+									</li>
+									<li>
+										<a href="/bj/mgsj/" data-target-id="top_7" data-role="second_level_jobtype">美工设计</a>
+									</li>
+									<li>
+										<a href="/bj/cych/" data-target-id="top_7" data-role="second_level_jobtype">创意策划</a>
+									</li>
+									<li>
+										<a href="/bj/xmwb/" data-target-id="top_7" data-role="second_level_jobtype">项目外包</a>
+									</li>
+									<li>
+										<a href="/bj/rjkf/" data-target-id="top_7" data-role="second_level_jobtype">软件开发</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/zhiyuanzhe/" data-target-id="top_8" data-role="second_level_jobtype">志愿者</a>
+									</li>
+									<li>
+										<a href="/bj/jiushengyuan/" data-target-id="top_8" data-role="second_level_jobtype">救生员</a>
+									</li>
+									<li>
+										<a href="/bj/shixisheng/" data-target-id="top_8" data-role="second_level_jobtype">实习生</a>
+									</li>
+									<li>
+										<a href="/bj/yigong/" data-target-id="top_8" data-role="second_level_jobtype">社会义工</a>
+									</li>
+								</ul>
+								<ul class="filter-cate clearfix" style="display: none;">
+									<li>
+										<a href="/bj/linshigong/" data-target-id="top_9" data-role="second_level_jobtype">临时工</a>
+									</li>
+									<li>
+										<a href="/bj/jzqita/" data-target-id="top_9" data-role="second_level_jobtype">其他</a>
+									</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="filterBar container-fluid">
+		       <div class="chkFilter col-md-9 col-xs-12">
+				<div id="payment" class="fake-select fl">
+					<div class="fake-select-bar">
+						结算方式
+						<i></i>
+						<div class="fake-select-wrap">
+							<ul class="fake-select-list">
+								<li>
+									<a href="#">不限</a>
+								</li>
+								<li>
+									<a href="#">酬金</a>
+								</li>
+								<li>
+									<a href="#">技能互换</a>
+								</li>
+							</ul>
+						</div>
+						</div>
+				</div>
+				<div id="sex" class="fake-select fl">
+					<div class="fake-select-bar">
+						性别要求
+						<i></i>
+						<div class="fake-select-wrap">
+							<ul class="fake-select-list">
+								<li>
+									<a href="#">全部</a>
+								</li>
+								<li>
+									<a href="#">男生可做</a>
+								</li>
+								<li>
+									<a href="#">女生可做</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="worktype" class="fake-select fl">
+					<div class="fake-select-bar">
+						任务模式
+						<i></i>
+						<div class="fake-select-wrap">
+							<ul class="fake-select-list">
+								<li>
+									<a href="#">不限</a>
+								</li>
+								<li>
+									<a href="#">线上任务</a>
+								</li>
+								<li>
+									<a href="#">线下任务</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sortFilter col-md-3 col-xs-12 hidden-xs">
+				<a href="#" class="cur">推荐排序</a>
+				<a href="#">最新发布</a>
+				<a href="#">工资最高</a>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a href="demandDetails.html">网站定制开发</a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>专业技能</li>
+                    <li><span>工作地点：</span>线上</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class" data-toggle='modal' data-target='#myModal'>报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>1000</em>元/月</span>
+					<span>月结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a href="demandDetails.html">招家教助教，高三数学 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州大学</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class" data-toggle='modal' data-target='#myModal'>报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>100</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a href="demandDetails.html">电脑重做系统 ，需要装win10</a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class">报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>30</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a href="#">线上简单小任务 两单一结 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class">报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>300</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a target="_blank" href="#">线上简单小任务 两单一结 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class">报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>300</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a href="#">线上简单小任务 两单一结 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class">报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>300</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a target="_blank" href="#">线上简单小任务 两单一结 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class">报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>300</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a target="_blank" href="#">线上简单小任务 两单一结 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class">报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>300</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a target="_blank" href="#">线上简单小任务 两单一结 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class">报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>300</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a target="_blank" href="#">线上简单小任务 两单一结 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class">报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>300</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid renw" style="margin-bottom: 20px;">
+			<div class="col-md-7 col-xs-12 jzText">
+				<h3>
+                    <a target="_blank" href="#">线上简单小任务 两单一结 </a>
+                </h3>
+                <!--<i class="word-jing-ico"></i>-->
+                <ul class="renw-field">
+                    <li><span>工作时间：</span>10.15~12.31</li>
+                    <li><span>技能类型：</span>其他</li>
+                    <li><span>工作地点：</span>苏州</li>
+                    <li><span>结算方式：</span>酬金</li>
+                </ul>
+			</div>
+			<div class="col-md-5 col-xs-12">
+				<div class="jzList-btn">
+                     <a href="javascript:;" class="apply_jz_class" data-toggle='modal' data-target='#myModal'>报名参加</a>
+                </div>
+				<div class="jzList-salary">
+					<span class="money"><em>300</em>元/天</span>
+					<span>日结</span>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- 模态框（Modal） -->
+		<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel"></h4>
+					</div>
+					<div class="modal-body" style="text-align: center;">
+							<button class="mod-btn01 btn btn-primary" id="redirect_im">与TA聊聊</button>
+							<button class="mod-btn02 btn btn-primary">立即下单</button>
+						</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<!--<button type="button" class="btn btn-primary">提交更改</button>-->
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal -->
+		</div>
+			<!--foot-->
+		<div class="container-fluid footer">
+			<div class="row row01">
+				<div class="col-md-offset-1 col-md-1 hidden-xs">
+					<img src="../img/logo.png" />
+				</div>
+				<div class="col-md-7 jianju25">
+					<ul class="nav-b">
+						<li class="liLeft">
+							关于我们
+							<ul class="sub-nav">
+								<li>
+									<a href="#" rel="nofollow">公司简介</a>
+								</li>
+								<li>
+									<a href="#" rel="nofollow">悬赏历程</a>
+								</li>
+								<li>
+									<a href="#" rel="nofollow">加入悬赏</a>
+								</li>
+								<li>
+									<a href="#" rel="nofollow">联系悬赏</a>
+								</li>
+								<li>
+									<a href="#" rel="nofollow">渠道招商</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">
+							<a href="#" rel="nofollow">悬赏创培生</a>
+						</li>
+						<li class="liLeft">悬赏资讯
+							<ul class="sub-nav">
+								<li>
+									<a href="#">悬赏新闻</a>
+								</li>
+								<li>
+									<a href="#/">工作技巧</a>
+								</li>
+							</ul>
+						</li>
+						<li class="liLeft">帮助中心
+							<ul class="sub-nav">
+								<li>
+									<a href="#" rel="nofollow">有偿服务</a>
+								</li> 
+							</ul>
+						</li>
+						<li class="liLeft">
+							<a href="#">网站地图</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 jianju25 hidden-xs">
+					<div class="hotline">
+						<span class="title">客服热线</span>
+						<span class="phone">010-57977077</span>
+						<span class="title">合作邮箱</span>
+						<span class="email">ecom#doumi.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="copyright">
+
+					<p style="margin-bottom: -10px!important;">&copy;2015-2018 悬赏&trade; 北京世诚优聘科技发展有限公司
+						<a target="_blank" href="#" rel="nofollow">京公网安备11010802022669号</a> 联系电话：010-57317000</p>
+				</div>
+			</div>
+		</div>
+<!--foot-->
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$("#personalCenter_li").click(function(){
+					if($("#personalCenter_ul").css("display")=="none"){
+						$("#personalCenter_ul").css('display','block');
+					}else if($("#personalCenter_ul").css("display")=="block"){
+						$("#personalCenter_ul").css('display','none');
+					}
+				});
+			$("#payment .fake-select-bar").mouseover(function(){
+				$("#payment .fake-select-list").css("display","block");
+			});
+			
+			$(".fake-select-bar").mouseleave(function(){
+				$("#payment .fake-select-list").css("display","none");
+			});
+			$("#sex .fake-select-bar").mouseover(function(){
+				$("#sex .fake-select-list").css("display","block");
+			});
+			
+			$(".fake-select-bar").mouseleave(function(){
+				$("#sex .fake-select-list").css("display","none");
+			});
+			$("#worktype .fake-select-bar").mouseover(function(){
+				$("#worktype .fake-select-list").css("display","block");
+			});
+			
+			$(".fake-select-bar").mouseleave(function(){
+				$("#worktype .fake-select-list").css("display","none");
+			});
+			
+			/*菜单栏动画*/
+			
+			$(".big-cate li").mouseover(function(){
+				var index = $(this).index();
+				$(".filter-cate-content ul").eq(index).css("display","block").siblings().css("display","none");
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+//			模态框
+			$("#myModal").on("shown.bs.modal", function () {
+			    var $this = $(this);
+			    var dialog = $this.find(".modal-dialog");
+			 
+			    var top = ($(window).height() - dialog.height()) / 2;
+			    dialog.css({
+			        marginTop:top
+			    });
+				});
+				
+			//跳转即时聊天页面
+			$("#redirect_im").click(function(){
+				location.href="IM.html";
+			})
+		});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>发布</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">		
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layoutFoot.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layoutHeader.css" />
+		<link rel="stylesheet" type="text/css" href="../css/release.css	" />
+	</head>
+
+	<body>
+		<!--导航开始-->
+		<div class="container-fluid header">
+			<div class="row">
+				<nav class="navbar navbar-default navBg" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+						            <span class="sr-only">切换导航</span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+       						</button>			
+							<a href="#" class="logoSet"><img style="margin-top: 10px;" src="../img/logo.png" /></a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav  navSet" style="margin-left: 100px;">
+								<li>
+									<a href="index.html">主页</a>
+								</li>
+								<li>
+									<a href="release.html" style="color: #ffaa2c!important;">发布</a>
+								</li>
+								<li>
+									<a href="find.html">悬赏</a>
+								</li>
+								<li id="personalCenter_li">
+									<a href="#" id="personalCenter_a">个人中心 <b class="caret"></b></a>
+									<ul class="personalCenter t" id="personalCenter_ul">
+					                    <li><a href="personalInformation.html" id="person01">个人资料</a></li>
+					                    <li><a href="PersonalSkills.html">个人技能</a></li>
+					                    <li><a href="message.html">消息通知</a></li>
+					                    <li><a href="orderInformation.html">我的订单</a></li>
+					                </ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right navRset" style="margin-left: 100px;">
+								<li>
+									<a href="register.html"><span class="glyphicon glyphicon-user"></span> 注册</a>
+								</li>
+								<li>
+									<a href="login.html"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--导航结束-->
+		
+		<div class="container-fluid">
+			<div class="row buttom">
+				<div class="content_left col-lg-1 col-md-1 col-sm-1 col-xs-1">
+
+				</div>
+				<div class="content_box col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					<div class="release_form">
+						<form action="#" method="post" role="form">
+							<div class="release_skill">
+								<div class="release_skill_t1">
+									<h3>请设置技能类型</h3>
+								</div>
+								<div class="release_skill_con">
+									<dl>
+										<dt class="release_skillWrite_01">输入需要的技能的主题<b>*</b></dt>
+										<dt>
+											 <input type="text" class="form-control" id="theme" placeholder="请输入需要的技能的主题">
+											 <span id="name_span" class="error_span hidden">输入的主题不能为空</span>
+										</dt>
+									</dl>
+									<dl>
+										<dt class="release_skillWrite_01">选择任务模式<b>*</b></dt>
+										<dt>
+											<div class="release_task_radio task_type_1"><input type="radio" class="release_task_type" name="release_task_type" />线上任务</div>
+											<div class="release_task_radio task_type_1"><input type="radio" class="release_task_type" name="release_task_type" />线下任务</div>
+											<span id="radio_span_1" class="error_span hidden">请选择任务模式</span>
+										</dt>
+									</dl>
+									<dl>
+										<dt class="release_skillWrite_01">选择任务主题</dt>
+										<dt>
+              							 <div class="col-sm-6 col-lg-6 col-xs-6" style="padding: 0;">
+                    						<select class="form-control" name="major" id="major">
+                      						  <option>专业</option>
+                      						  <option>简单易做</option>
+                      						  <option>跑腿办事</option>
+                      						  <option>室内推荐</option>
+                      						  <option>体力达人</option>
+                      						  <option>专业技能</option>
+                      						  <option>演绎达人</option>
+                      						  <option>特色职位</option>
+                      						  <option>优秀青年</option>
+                      						  <option>其他</option>
+                    						</select>
+               							 </div>
+             						   <div class="col-sm-6 col-lg-6 col-xs-6">
+                						 </div>
+										</dt>
+									</dl>
+									<dl style="margin-top: 50px;">
+										<dt class="release_skillWrite_01">输入任务详情</dt>
+										<dt>
+											<div class="release_task_content" >
+												<textarea class="form-control" rows="3" ></textarea>
+											</div>
+										</dt>
+									</dl>
+									<dl>
+										<dt class="release_skillWrite_01">设置报酬方式<b>*</b></dt>
+										<dt>
+											<div class="release_task_radio task_type_2"><input type="radio" class="release_pay_type" name="release_pay_type" />技能互助</div>
+											<div class="release_task_radio task_type_2"><input type="radio" class="release_pay_type" name="release_pay_type" />支付佣金</div>
+										<span id="radio_span_2" class="error_span hidden">请选择报酬方式</span>
+										</dt>
+									</dl>
+								</div>
+							</div>
+							<div class="release_Contact_information">
+								<div class="release_skill_t1">
+									<h3>联系方式</h3>
+								</div>
+								<dl>
+									<dt class="release_skillWrite_01">发布人姓名<b>*</b></dt>
+									<dt>
+										 <input type="text" class="form-control required" id="name" placeholder="请确定发布任务的联系人">
+										 <span id="name_span_2" class="error_span hidden">请输入联系人姓名(只能输入中文和英文)</span>
+									</dt>
+								</dl>
+								<dl>
+									<dt class="release_skillWrite_01">发布人电话<b>*</b></dt>
+									<dt>
+									<input type="text" class="form-control" id="phone" placeholder="请输入联系人电话">
+								 	<span id="phone_span" class="error_span hidden">请输入正确的手机号码</span>
+									</dt>
+								</dl>
+								<dl>
+									<dt class="release_skillWrite_01">发布人邮箱<b>*</b></dt>
+									<dt>
+										<input type="text" class="form-control" id="email" placeholder="请输入联系人邮箱">
+										 <span id="email_span" class="error_span hidden">请输入正确的邮箱</span>
+									</dt>
+								</dl>
+								<dl>
+									<dt class="release_skillWrite_01">任务时间</dt>
+									<dt>
+              							 <div class="col-sm-4 col-lg-4 col-xs-5" style="padding: 0;">
+                    						 <input type="text" class="form-control" id="theme" placeholder="请输入任务开始时间">
+               							 </div>
+               							  <div class="col-sm-1 col-lg-1 col-xs-1" style="padding: 0;">
+               							  	<center>
+               							  		<span style="font-size: 25px;" >~</span>
+               							  	</center>
+               							  	
+               							  </div>
+               							 
+             						   <div class="col-sm-4 col-lg-4 col-xs-5" style="padding: 0;">
+                  				 			 <input type="text" class="form-control" id="theme" placeholder="请输入需要结束时间">
+                						 </div>
+									</dt>
+									<dt>
+									</dt>
+								</dl>
+								<dl>
+									<dt class="release_skillWrite_01">任务地点<b>*</b></dt>
+									<dt>
+              							 <div class="col-sm-4 col-lg-4 col-xs-6" style="padding: 0;">
+                    						<span id="Province_span" class="error_span hidden release_skillWrite_01">请选择省份</span>
+                    						<select class="form-control " name="Province" id="Province">
+                      						  <option>省份</option>
+                      						  <option>江苏</option>
+                      						  <option>安徽</option>
+                    						</select>
+               							 </div>
+             						   <div class="col-sm-4 col-lg-4 col-xs-6" style="padding: 0;">
+                    						<span id="City_span" class="error_span hidden release_skillWrite_01">请选择城市</span>
+                  				 			 <select class="form-control" name="City" id="City">
+                       						 <option>城市</option>
+                       						  <option>南京</option>
+                       						  <option>苏州</option>
+                    						</select>
+                						 </div>
+               						 <div class="col-sm-4 col-lg-4 col-xs-6" style="padding: 0;">
+                  					   <span id="School_span" class="error_span hidden release_skillWrite_01">请选择学校</span>
+                					    <select class="form-control" name="School" id="School" >
+                     					  <option>学校</option>
+                     					  <option>南京理工</option>
+                     					  <option>南京师范大学</option>
+                  					    </select>
+              						  </div>
+									</dt>
+									<dt style="margin-top: 50px;">
+										<span id="address_span" class="error_span hidden release_skillWrite_01">请输入详细地址</span>
+										<input type="text" class="form-control" id="address" placeholder="请输入详细地址">
+									</dt>
+								</dl>
+							</div>
+							<div class="submit_btn" style="margin-bottom: 50px;">
+								<div class="col-sm-12 col-lg-12 col-xs-12">
+									<center>
+										<button id="send" class="btn btn-primary" data-loading-text="Loading..." type="button">立即提交</button>
+									</center>
+
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="content_right col-lg-1 col-md-1 col-sm-1 col-xs-1">
+				</div>
+			</div>
+		</div>
+		<!--foot-->
+		<div class="row row01 footer">
+			<div class="col-md-offset-1 col-md-1 hidden-xs">
+				<img src="../img/logo.png" />
+			</div>
+			<div class="col-md-7 jianju25">
+				<ul class="nav-b">
+					<li class="liLeft">
+						关于我们
+						<ul class="sub-nav">
+							<li>
+								<a href="/aboutus/" rel="nofollow">公司简介</a>
+							</li>
+							<li>
+								<a href="/progress/" rel="nofollow">悬赏历程</a>
+							</li>
+							<li>
+								<a href="/joinus/" rel="nofollow">加入悬赏</a>
+							</li>
+							<li>
+								<a href="/contactus/" rel="nofollow">联系悬赏</a>
+							</li>
+							<li>
+								<a href="/jiameng/" rel="nofollow">渠道招商</a>
+							</li>
+						</ul>
+					</li>
+					<li class="liLeft">
+						<a href="/chuangpeisheng/" rel="nofollow">悬赏创培生</a>
+					</li>
+					<li class="liLeft">悬赏资讯
+						<ul class="sub-nav">
+							<li>
+								<a target="_blank" href="http://news.doumi.com/">悬赏新闻</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://news.doumi.com/jq/">工作技巧</a>
+							</li>
+						</ul>
+					</li>
+					<li class="liLeft">帮助中心
+						<ul class="sub-nav">
+							<li>
+								<a href="/payservice/" rel="nofollow">有偿服务</a>
+							</li>
+						</ul>
+					</li>
+					<li class="liLeft">
+						<a href="/sitemap.htm">网站地图</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 jianju25 hidden-xs">
+				<div class="hotline">
+					<span class="title">客服热线</span>
+					<span class="phone">010-66666666</span>
+					<span class="title">合作邮箱</span>
+					<span class="email">marzhuang@126.com</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="copyright">
+				<p style="margin-bottom: -10px;">&copy;2015-2018 悬赏&trade; 巢湖学院科技发展有限公司
+					<a target="_blank" href="#" rel="nofollow">皖公网安备11010802022669号</a> 联系电话：010-66666666</p>
+			</div>
+		</div>
+		</div>
+		<script src="../plugins/jquery/jquery.min.js"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/release.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#personalCenter_li").click(function(){
+					if($("#personalCenter_ul").css("display")=="none"){
+						$("#personalCenter_ul").css('display','block');
+					}else if($("#personalCenter_ul").css("display")=="block"){
+						$("#personalCenter_ul").css('display','none');
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
